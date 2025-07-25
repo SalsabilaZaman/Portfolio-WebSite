@@ -19,7 +19,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 26px;
+    font-size: 16px;
     font-weight: 400;
     background-color: #f4f4f4;
     color: #333;
@@ -99,14 +99,17 @@ a:hover {
 
 .hamburger-icon {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 30px;
     height: 24px;
-    background-color: #333;
+    cursor: pointer;
+    /* background-color: #333;
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; */
 }
 
 .hamburger-icon span {
@@ -115,7 +118,7 @@ a:hover {
     height: 4px;
     background-color: black;
     margin-bottom: 6px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
@@ -124,8 +127,51 @@ a:hover {
     left: 0;
     background-color: white;
     width: fit-content;
+    max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     /* padding: 20px; */
     /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
 }
+
+.menu-links a {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px; /* Adjust based on the number of links */
+}
+.hamburger-icon span:first-child {
+ transform: none;
+}
+.hamburger-icon span:first-child {
+ opacity: 1;
+}
+.hamburger-icon span:first-child {
+ transform: none;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+
+/* SECTIONS */
+
