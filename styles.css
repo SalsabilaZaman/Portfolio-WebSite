@@ -175,3 +175,152 @@ a:hover {
 
 /* SECTIONS */
 
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* PROFILE */
+
+#profile {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+    /* text-align: center; */
+}
+
+.section-pic-container {
+    display: flex;
+    height: 350px;
+    width: 420px;
+    margin: auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    align-items: center;
+    justify-content: center;
+}
+.section-pic-container img {
+    width: 850px;
+    height: 850px;
+}
+
+.section-text-container{
+    align-self: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+.section-text-container p{
+    font-weight: 600;
+    /* margin: auto 0; */
+}
+
+.section-text-p1{
+    text-align: center;
+}
+.section-text-p1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.section-text-p2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: -1.2rem;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0,5rem;
+    /* font-size: 5px; */
+}
+
+
+/* ICONS */
+
+.icon{
+    cursor: pointer;
+    height: 2.3rem;
+    width: 2.3rem;
+}
+
+
+/* BUTTONS */
+
+.btn-container {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-1, .btn-2 {
+    height: 45px;
+    width: 180px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: black solid 2px;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #c5c3c4;
+    
+    color: rgb(7, 7, 7);
+}
+.btn-1:hover, .btn-2:hover {
+    background-color: #5a878d;
+}
+
+/* SECTIONS */
+
+
+
+#about,#contact,#projects,#experience {
+    background-color: #f4f4f4;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    margin: 2rem auto;
+    /* max-width: 700px; */
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    text-align: center;
+
+}
+
+#about h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #05203b;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #333;
+}
