@@ -206,8 +206,8 @@ section{
 
 .section-pic-container {
     display: flex;
-    height: 490px;
-    width: 520px;
+    height: 390px;
+    width: 390px;
     margin: auto 0;
     border-radius: 50%;
     overflow: hidden;
@@ -217,8 +217,9 @@ section{
     justify-content: center;
 }
 .section-pic-container img {
-    width: 850px;
-    height: 850px;
+    width: 550px;
+    height: 550px;
+    /* margin: auto 0; */
 }
 
 .section-text-container{
@@ -303,12 +304,12 @@ section{
 
 
 
-#about,#contact,#projects,#experience {
+/* #about,#contact,#projects,#experience {
     background-color: #f4f4f4;
     padding: 3rem 2rem;
     border-radius: 1.5rem;
     margin: 2rem auto;
-    /* max-width: 700px; */
+    max-width: 700px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.08);
     text-align: center;
 
@@ -323,4 +324,55 @@ section{
 #about p {
     font-size: 1.2rem;
     color: #333;
+}  */
+
+
+/* ABOUT SECTIONS */
+
+#about{
+    position: relative;
+}
+.about-container{
+    gap:2rem;
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}
+
+.about-detailed-container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about-pic{
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 1.5rem;
+    border: rgb(53, 53, 53) .1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container{
+    gap:4rem;
+    height: 80%;
 }
